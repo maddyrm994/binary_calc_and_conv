@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Converter and Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Converter and Calculator</h1>
+
+        <h2>Base Converter</h2>
+        <div class="converter">
+            <label for="number">Enter a Number:</label>
+            <input type="text" id="number" placeholder="Enter a number">
+            <label for="base">Select Base:</label>
+            <select id="base">
+                <option value="2">Binary</option>
+                <option value="10" selected>Decimal</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+            <button onclick="convertNumber()">Convert</button>
+            <div class="output">
+                <p>Binary: <span id="binary-output"></span></p>
+                <p>Decimal: <span id="decimal-output"></span></p>
+                <p>Octal: <span id="octal-output"></span></p>
+                <p>Hexadecimal: <span id="hex-output"></span></p>
+            </div>
+        </div>
+
+        <h2>Binary Calculator</h2>
+        <div class="calculator">
+            <input type="text" id="binary-num1" placeholder="Binary number 1">
+            <select id="operation">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <input type="text" id="binary-num2" placeholder="Binary number 2">
+            <button onclick="calculateBinary()">Calculate</button>
+            <div class="output">
+                <p>Result: <span id="binary-result"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
