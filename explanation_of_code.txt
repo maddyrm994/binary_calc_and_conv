@@ -1,0 +1,15 @@
+Explanation of Code
+
+1. Base Conversion:
+  (i) The function convertNumber reads the input number and base, converts the number to decimal, and then uses JavaScript’s toString method to convert it to other bases (binary, octal, hexadecimal).
+  (ii) If an invalid number is entered, it alerts the user.
+
+2. Binary Calculator:
+  (i) The calculateBinary function validates if both inputs are binary.
+  (ii) It converts binary numbers to decimal, performs the selected arithmetic operation, and converts the result back to binary.
+  (iii) Division uses Math.floor for integer results and includes a check to prevent division by zero.
+  
+3. User Interface:
+  (i) HTML elements are organized with headings and sections for clarity.
+  (ii) CSS styling enhances readability and provides a user-friendly interface.
+  (iii) This app is an educational tool for learning about binary and base conversions while exploring how arithmetic works with binary numbers.
